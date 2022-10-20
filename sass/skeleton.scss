@@ -69,12 +69,29 @@ main {
 			padding-top: 178px;
 			display: block;
 			color: #bbff50;
-			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-width: 1px;
 			-webkit-text-stroke-color: black;
 			text-transform: uppercase;
 			span {
 				color: white;
 			}
+		}
+	}
+
+	section.postulate {
+		margin: 0;
+		a {
+			font-size: 23px;
+			background-color: #F03D93;
+			padding: 12px;
+			border-radius: 18px;
+			color: white;
+			display: block;
+			width: 250px;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
 		}
 	}
 }
