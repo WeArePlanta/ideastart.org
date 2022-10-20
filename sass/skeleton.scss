@@ -37,18 +37,18 @@ button {
 }
 
 main {
+	h3 {
+		font-size: 30px;
+		color: #bbff50;
+		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: black;
+		margin-bottom: 5px;
+	}
 	section {
 		margin-right: 23px;
 		margin-left: 23px;
 	}
 	section.top-main {
-		h3 {
-			font-size: 30px;
-			color: #bbff50;
-			-webkit-text-stroke-width: 0.5px;
-			-webkit-text-stroke-color: black;
-			margin-bottom: 5px;
-		}
 		h6 {
 			font-size: 23px;
 			font-weight: bold;
@@ -80,9 +80,14 @@ main {
 
 	section.postulate {
 		margin: 0;
+		article {
+			background-color: #f4f4f4;
+			border-bottom-right-radius: 150px;
+			padding-bottom: 70px;
+		}
 		a {
 			font-size: 23px;
-			background-color: #F03D93;
+			background-color: #f03d93;
 			padding: 12px;
 			border-radius: 18px;
 			color: white;
@@ -92,6 +97,40 @@ main {
 			margin: 0 auto;
 			margin-top: 50px;
 			margin-bottom: 50px;
+		}
+
+		p {
+			margin: 23px;
+			text-align: center;
+			font-size: 24px;
+
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+
+	section.desafios {
+		margin-top: 50px;
+
+		ul {
+			margin-top: 30px;
+			li {
+				font-size: 17px;
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	section.beneficios {
+		h2 {
+			text-align: center;
+			font-size: 41px;
+			color: #FCE864;
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: black;
 		}
 	}
 }
