@@ -117,9 +117,40 @@ main {
 			margin-top: 30px;
 			li {
 				font-size: 17px;
+				overflow: auto;
+				margin-bottom: 20px;
 				span {
 					font-weight: bold;
 				}
+			}
+
+			li.desafios-li::before {
+				content: " ";
+				display: inline-block;
+				background-size: contain;
+				background-image: url("img/icono-embarazada.svg");
+				width: 56px;
+				height: 74px;
+				background-repeat: no-repeat;
+				float: left;
+				margin-right: 20px;
+				margin-bottom: 67px;
+			}
+
+			li.desafios-li.martillo::before {
+				background-image: url("img/icono-martillo.svg");
+			}
+			li.desafios-li.utero::before {
+				background-image: url("img/icono-utero.svg");
+			}
+			li.desafios-li.trompada::before {
+				background-image: url("img/icono-trompada.svg");
+			}
+			li.desafios-li.test::before {
+				background-image: url("img/icono-test.svg");
+			}
+			li.desafios-li.blister::before {
+				background-image: url("img/icono-blister.svg");
 			}
 		}
 	}
@@ -128,7 +159,7 @@ main {
 		h2 {
 			text-align: center;
 			font-size: 41px;
-			color: #FCE864;
+			color: #fce864;
 			-webkit-text-stroke-width: 0.5px;
 			-webkit-text-stroke-color: black;
 		}
