@@ -171,7 +171,7 @@ main {
 			border-top-left-radius: 81px;
 			max-width: 270px;
 			padding-bottom: 59px;
-			margin: 0 auto 100px;
+			margin: 0 auto 80px;
 			picture {
 				height: 125px;
 				margin: 0 auto;
@@ -201,6 +201,46 @@ main {
 				text-align: center;
 				font-size: 16px;
 				color: #33333380;
+				max-width: 206px;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	section.al-finalizar {
+		p.al-finalizar-texto {
+			text-align: center;
+			font-size: 26px;
+			font-weight: bold;
+			margin-bottom: 70px;
+		}
+
+		figure.tarjeta {
+			box-shadow: -1px 0px 8px 12px #00183415;
+			border-radius: 20px;
+			border-top-left-radius: 81px;
+			max-width: 270px;
+			padding-bottom: 59px;
+			margin: 0 auto 80px;
+			picture {
+				height: 125px;
+				margin: 0 auto;
+				padding: 21px;
+				border-radius: 65px;
+				margin-bottom: 50px;
+				margin-top: 20px;
+				position: relative;
+				width: 166px;
+				text-align: center;
+				top: -20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			figcaption {
+				text-align: center;
+				font-size: 24px;
 				max-width: 206px;
 				margin: 0 auto;
 			}
