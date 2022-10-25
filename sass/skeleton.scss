@@ -9,8 +9,6 @@ html {
 
 body {
 	-webkit-font-smoothing: antialiased;
-	max-width: 900px;
-	margin: 0 auto;
 }
 
 img {
@@ -50,27 +48,48 @@ a {
 		width: 350px;
 		font-size: 32px;
 	}
+	@media (min-width: 1200px) {
+		width: 188px;
+		font-size: 16px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 button {
 	cursor: pointer;
 }
 
+section {
+	margin-right: 23px;
+	margin-left: 23px;
+}
 main {
-	h3 {
-		font-size: 30px;
-		color: #bbff50;
-		-webkit-text-stroke-width: 0.5px;
-		-webkit-text-stroke-color: black;
-		margin-bottom: 5px;
-
-		@media (min-width: 768px) {
-			font-size: 40px;
+	section.top-main {
+		@media (min-width: 1200px) {
+			position: absolute;
+			max-width: 550px;
+			padding: 110px 0 0 130px;
 		}
-	}
-	section {
-		margin-right: 23px;
-		margin-left: 23px;
+		h3 {
+			font-size: 30px;
+			color: #bbff50;
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: black;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+
+			@media (min-width: 768px) {
+				font-size: 40px;
+			}
+			@media (min-width: 1200px) {
+				color: #333333;
+				text-transform: none;
+				-webkit-text-stroke-width: 0;
+				-webkit-text-stroke-color: transparent;
+				font-size: 50px;
+			}
+		}
 	}
 	section.top-main {
 		h6 {
@@ -79,6 +98,10 @@ main {
 			margin: 0;
 			@media (min-width: 768px) {
 				font-size: 30px;
+			}
+			@media (min-width: 1200px) {
+				color: #333333;
+				font-size: 33px;
 			}
 		}
 	}
@@ -92,6 +115,12 @@ main {
 
 		@media (min-width: 768px) {
 			height: 500px;
+		}
+		@media (min-width: 1200px) {
+			background-image: url("img/Hackers-Bien-06@2x.png");
+			height: 810px;
+			width: 100%;
+			margin: 0 auto;
 		}
 		h1 {
 			text-align: center;
@@ -109,15 +138,26 @@ main {
 				font-size: 69px;
 				padding-top: 272px;
 			}
+			@media (min-width: 1200px) {
+				display: none;
+			}
 		}
 	}
 
 	section.postulate {
 		margin: 0;
+		@media (min-width: 1200px) {
+			margin-top: 50px;
+		}
 		article {
 			background-color: #f4f4f4;
 			border-bottom-right-radius: 150px;
 			padding-bottom: 70px;
+			@media (min-width: 1200px) {
+				margin-top: 64px;
+				position: relative;
+				max-width: 1300px;
+			}
 		}
 		a {
 			@include postulate-link;
@@ -131,11 +171,25 @@ main {
 			span {
 				font-weight: bold;
 			}
+
+			@media (min-width: 1200px) {
+				position: absolute;
+				position: absolute;
+				top: 29px;
+				max-width: 600px;
+				text-align: left;
+				right: 20px;
+				font-size: 30px;
+			}
 		}
 
 		img {
 			width: 100%;
 			margin: 0 auto;
+			@media (min-width: 1200px) {
+				max-width: 533px;
+				margin-left: 70px;
+			}
 		}
 	}
 

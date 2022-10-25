@@ -3,7 +3,19 @@ header {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-top: 15px;
-	
+	margin-bottom: 15px;
+
+	.postula-ahora-header {
+		display: none;
+		@media (min-width: 1200px) {
+			display: block;
+		}
+
+		a {
+			@include postulate-link;
+		
+		}
+	}
 }
 .logo-impaqto {
 	width: 73px;
