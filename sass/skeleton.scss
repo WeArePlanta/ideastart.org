@@ -277,6 +277,11 @@ main {
 			color: #fce864;
 			-webkit-text-stroke-width: 0.5px;
 			-webkit-text-stroke-color: black;
+			@media (min-width: 1200px) {
+				max-width: 1058px;
+				margin: 0 auto;
+				margin-bottom: 100px;
+			}
 		}
 
 		article.tarjetas figure.tarjeta {
