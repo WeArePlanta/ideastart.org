@@ -32,6 +32,20 @@ a {
 	text-decoration: none;
 }
 
+@mixin postulate-link {
+	font-size: 23px;
+	background-color: #f03d93;
+	padding: 12px;
+	border-radius: 18px;
+	color: white;
+	display: block;
+	width: 250px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 button {
 	cursor: pointer;
 }
@@ -86,17 +100,7 @@ main {
 			padding-bottom: 70px;
 		}
 		a {
-			font-size: 23px;
-			background-color: #f03d93;
-			padding: 12px;
-			border-radius: 18px;
-			color: white;
-			display: block;
-			width: 250px;
-			text-align: center;
-			margin: 0 auto;
-			margin-top: 50px;
-			margin-bottom: 50px;
+			@include postulate-link;
 		}
 
 		p {
@@ -275,11 +279,13 @@ main {
 			color: #bbff50;
 			-webkit-text-stroke-width: 0.5px;
 			-webkit-text-stroke-color: black;
-			max-width: 500px;
 			margin: 0 auto;
 			margin-bottom: 32px;
 			text-align: center;
 			padding-top: 37px;
+			padding-right: 40px;
+			padding-left: 40px;
+			max-width: 600px;
 		}
 
 		div {
@@ -317,16 +323,28 @@ main {
 	section.tienes-una-startup {
 		background-color: #ddffa7;
 		border-top-left-radius: 114px;
-		border-top-right-radius: 20px; 
-		border-bottom-left-radius: 20px; 
-		border-bottom-right-radius: 20px; 
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		margin-top: 43px;
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+		p {
+			font-size: 23px;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
 		p.tienes-destacado {
 			font-size: 31px;
 			text-align: center;
 			font-weight: bold;
-			max-width: 292px;
 			padding: 100px 9px 30px;
 			margin: 0 auto;
+		}
+		a {
+			@include postulate-link;
 		}
 	}
 }

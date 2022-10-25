@@ -1,0 +1,26 @@
+footer {
+    ul {
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+        li {
+            margin: 0 5px;
+        }
+    }
+
+    .logos-footer {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    section.copyright {
+        p {
+            text-align: center;
+            padding-top: 50px;
+            color: #33333380;
+            border-top: solid 0.5px;
+            margin-top: 30px;
+        }
+    }
+}
