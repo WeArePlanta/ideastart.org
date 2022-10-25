@@ -196,6 +196,19 @@ main {
 	section.desafios {
 		margin-top: 50px;
 
+		h3 {
+			font-size: 30px;
+			color: #bbff50;
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: black;
+			margin-bottom: 5px;
+			@media (min-width: 768px) {
+				text-align: center;
+				font-size: 40px;
+				max-width: 860px;
+				margin: 0 auto;
+			}
+		}
 		ul {
 			margin-top: 30px;
 			@media (min-width: 768px) {
@@ -203,12 +216,23 @@ main {
 				margin: 0 auto;
 				margin-top: 60px;
 			}
+			@media (min-width: 1200px) {
+				display: flex;
+				flex-wrap: wrap;
+				max-width: 1300px;
+				justify-content: center;
+			}
 			li {
 				font-size: 17px;
 				overflow: auto;
 				margin-bottom: 20px;
 				@media (min-width: 768px) {
 					font-size: 22px;
+				}
+				@media (min-width: 1200px) {
+					max-width: 350px;
+					font-size: 17px;
+					margin-right: 50px;
 				}
 				span {
 					font-weight: bold;
