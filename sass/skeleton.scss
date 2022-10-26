@@ -32,43 +32,43 @@ a {
 	text-decoration: none;
 }
 
-
 .main-counter-container {
-position: relative;
-#counter {
-	border: solid 1px;
-    margin: 0 auto;
-    text-align: center;
-    border-color: black;
-    width: 350px;
-    border-top-left-radius: 145px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 48px 34px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -42px;
-	background-color: white;
-	div {
-		width: 130px;
-	}
-	p {
-		font-size: 94px;
-		font-weight: bold;
-		color: #f03d93;
-		-webkit-text-stroke-width: 0.5px;
-		-webkit-text-stroke-color: black;
-	}
+	position: relative;
+	#counter {
+		border: solid 1px;
+		margin: 0 auto;
+		text-align: center;
+		border-color: black;
+		width: 350px;
+		border-top-left-radius: 145px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 48px 34px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -42px;
+		background-color: white;
+		div {
+			width: 130px;
+		}
+		p {
+			font-size: 94px;
+			font-weight: bold;
+			color: #f03d93;
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: black;
+		}
 
-	span {
-		font-size: 19px;
-		font-weight: bold;
+		span {
+			font-size: 19px;
+			font-weight: bold;
+		}
 	}
-}}
+}
 
 @mixin postulate-link {
 	font-size: 23px;
@@ -106,7 +106,7 @@ main {
 	section.top-main {
 		@media (min-width: 1200px) {
 			position: absolute;
-			max-width: 550px;
+			max-width: 659px;
 			padding: 110px 0 0 130px;
 		}
 		h3 {
@@ -155,7 +155,7 @@ main {
 			height: 500px;
 		}
 		@media (min-width: 1200px) {
-			background-image: url("img/Hackers-Bien-06@2x.png");
+			background-image: url("img/Fondo-header-1920.png");
 			height: 810px;
 			width: 100%;
 			margin: 0 auto;
@@ -177,7 +177,10 @@ main {
 				padding-top: 272px;
 			}
 			@media (min-width: 1200px) {
-				display: none;
+				position: relative;
+				left: 219px;
+				top: 125px;
+				font-size: 100px;
 			}
 		}
 	}
