@@ -284,47 +284,71 @@ main {
 			}
 		}
 
-		article.tarjetas figure.tarjeta {
-			box-shadow: -1px 0px 8px 12px #00183415;
-			border-radius: 20px;
-			border-bottom-right-radius: 81px;
-			border-top-left-radius: 81px;
-			max-width: 270px;
-			padding-bottom: 59px;
-			margin: 0 auto 80px;
-			picture {
-				height: 125px;
-				margin: 0 auto;
-				padding: 21px;
-				border-radius: 65px;
-				margin-bottom: 50px;
-				margin-top: 20px;
-				position: relative;
-				width: 125px;
-				text-align: center;
-				top: -20px;
+		article.tarjetas {
+			@media (min-width: 1200px) {
 				display: flex;
+				flex-wrap: wrap;
 				justify-content: center;
-				align-items: center;
-				&.rosa {
-					background-color: #f03d93;
-				}
-				&.amarillo {
-					background-color: #fce864;
-				}
-				&.violeta {
-					background-color: #6929d2;
-				}
+				max-width: 1210px;
+				margin: auto;
+				margin-bottom: 100px;
 			}
+			figure.tarjeta {
+				box-shadow: -1px 0px 8px 12px #00183415;
+				border-radius: 20px;
+				border-bottom-right-radius: 81px;
+				border-top-left-radius: 81px;
+				max-width: 270px;
+				padding-bottom: 59px;
+				margin: 0 auto 80px;
+				@media (min-width: 1200px) {
+					margin-left: 50px;
+					margin-right: 50px;
+					width: 350px;
 
-			figcaption {
-				text-align: center;
-				font-size: 16px;
-				color: #33333380;
-				max-width: 206px;
-				margin: 0 auto;
-				@media (min-width: 768px) {
-					font-size: 20px;
+					&.yellow {
+						position: relative;
+						bottom: -75px;
+					}
+				}
+				picture {
+					height: 125px;
+					margin: 0 auto;
+					padding: 21px;
+					border-radius: 65px;
+					margin-bottom: 50px;
+					margin-top: 20px;
+					position: relative;
+					width: 125px;
+					text-align: center;
+					top: -20px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					&.rosa {
+						background-color: #f03d93;
+					}
+					&.amarillo {
+						background-color: #fce864;
+					}
+					&.violeta {
+						background-color: #6929d2;
+					}
+					@media (min-width: 1200px) {
+						margin-top: -19px;
+
+					}
+				}
+
+				figcaption {
+					text-align: center;
+					font-size: 16px;
+					color: #33333380;
+					max-width: 206px;
+					margin: 0 auto;
+					@media (min-width: 768px) {
+						font-size: 20px;
+					}
 				}
 			}
 		}
