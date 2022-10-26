@@ -50,11 +50,12 @@ a {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: -42px;
+		top: -20px;
 		background-color: white;
 		@media (min-width: 1200px) {
 			width: 970px;
 			justify-content: center;
+			top: -40px;
 		}
 		div {
 			width: 130px;
