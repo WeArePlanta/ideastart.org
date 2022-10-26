@@ -1,22 +1,18 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
-
+    var countDownDate = new Date("2022-11-20T00:00:00.000-05:00").getTime();
     setInterval(function () {
-        const today = new Date();
 
-        const daysLeft = Math.floor(((new Date("2022-11-20T00:00:00.000-05:00")) - today) / (1000 * 60 * 60 * 24))
+        var now = new Date().getTime();
 
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-        const hours = Math.floor((today / (1000 * 60 * 60)) % 24);
-        console.log(hours);
-
-        const minutes = Math.floor((today / 1000 / 60) % 60);
-        console.log(minutes);
-
-        const seconds = Math.floor((today / 1000) % 60);
-        console.log(seconds);
-
-        //acá creo los elementos html correspondientes para cada valor
+        // Time calculations for days, hours, minutes and seconds
+        var daysLeft = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         //dias
         var diaTexto = document.createElement("p");
@@ -49,10 +45,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         //acá agrego los textos creados a los elementos creados 
         //dias
-        diaTexto.appendChild(textHoras);
+        diaTexto.appendChild(text);
         diaSpan.appendChild(textDiaSpan);
         //horas
-        hoursTexto.appendChild(text);
+        hoursTexto.appendChild(textHoras);
         hoursSpan.appendChild(textHorasSpan);
         //minutos
         minutesTexto.appendChild(textMinutos);
