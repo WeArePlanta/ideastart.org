@@ -350,29 +350,32 @@ main {
 			color: #33333380;
 		}
 
-		figure.tarjeta {
+		div.tarjeta {
 			box-shadow: -1px 0px 8px 12px #00183415;
 			border-radius: 20px;
 			border-top-left-radius: 81px;
 			max-width: 270px;
 			padding-bottom: 59px;
 			margin: 0 auto 80px;
-			picture {
-				height: 125px;
-				margin: 0 auto;
-				padding: 21px;
-				border-radius: 65px;
-				margin-bottom: 50px;
-				margin-top: 20px;
+			margin-top: 130px;
+		
+			span {
+				font-size: 140px;
+				color: #6929d2;
+				font-weight: bold;
+				background: #bbff50;
+				padding: 0px 80px;
+				border-radius: 111px;
 				position: relative;
-				width: 166px;
-				text-align: center;
-				top: -20px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
+				top: -60px;
+				left: 35px;
 
+				&.dos {
+					background-color: #fce864;
+					color: #f03d93;
+					padding: 0px 68px;
+				}
+			}
 			figcaption {
 				text-align: center;
 				font-size: 24px;
