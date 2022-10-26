@@ -32,6 +32,44 @@ a {
 	text-decoration: none;
 }
 
+
+.main-counter-container {
+position: relative;
+#counter {
+	border: solid 1px;
+    margin: 0 auto;
+    text-align: center;
+    border-color: black;
+    width: 350px;
+    border-top-left-radius: 145px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 48px 34px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -42px;
+	background-color: white;
+	div {
+		width: 130px;
+	}
+	p {
+		font-size: 94px;
+		font-weight: bold;
+		color: #f03d93;
+		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: black;
+	}
+
+	span {
+		font-size: 19px;
+		font-weight: bold;
+	}
+}}
+
 @mixin postulate-link {
 	font-size: 23px;
 	background-color: #f03d93;
@@ -146,6 +184,7 @@ main {
 
 	section.postulate {
 		margin: 0;
+		padding-top: 350px;
 		@media (min-width: 1200px) {
 			margin-top: 50px;
 		}
