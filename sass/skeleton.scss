@@ -52,6 +52,10 @@ a {
 		right: 0;
 		top: -42px;
 		background-color: white;
+		@media (min-width: 1200px) {
+			width: 970px;
+			justify-content: center;
+		}
 		div {
 			width: 130px;
 		}
@@ -150,7 +154,7 @@ main {
 		background-position: right;
 		height: 350px;
 		margin: 0;
-
+		overflow: hidden;
 		@media (min-width: 768px) {
 			height: 500px;
 		}
@@ -190,6 +194,8 @@ main {
 		padding-top: 350px;
 		@media (min-width: 1200px) {
 			margin-top: 50px;
+			padding-top: 200px;
+
 		}
 		article {
 			background-color: #f4f4f4;
