@@ -622,10 +622,19 @@ main {
 		max-width: 1100px;
 		margin: 0 auto;
 		p {
-			font-size: 31px;
+			font-size: 45px;
+			color: #bbff50;
+			text-transform: uppercase;
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: black;
+			margin-bottom: 5px;
 			text-align: center;
-			font-weight: bold;
-			margin: 0 auto;
+			@media (min-width: 768px) {
+				text-align: center;
+				font-size: 50px;
+				max-width: 860px;
+				margin: 0 auto;
+			}
 		}
 		article {
 			display: flex;

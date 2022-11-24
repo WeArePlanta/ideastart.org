@@ -29,17 +29,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         //acá creo los textos que iran dentro de los elementos html
 
-        //dias
-        var text = document.createTextNode(daysLeft);
+        //dias // hago este ajuste no lindo para que aparezca en cero
+        var text = document.createTextNode("00");
+        // var text = document.createTextNode(daysLeft);
         var textDiaSpan = document.createTextNode("Días");
         //horas
-        var textHoras = document.createTextNode(hours);
+        var textHoras = document.createTextNode("00");
+        // var textHoras = document.createTextNode(hours);
         var textHorasSpan = document.createTextNode("Horas");
         //minutos
-        var textMinutos = document.createTextNode(minutes);
+        var textMinutos = document.createTextNode("00");
+        // var textMinutos = document.createTextNode(minutes);
         var textMinutosSpan = document.createTextNode("Minutos");
         //segundos
-        var textSegundos = document.createTextNode(seconds);
+        var textSegundos = document.createTextNode("00");
+        // var textSegundos = document.createTextNode(seconds);
         var textSegundosSpan = document.createTextNode("Segundos");
 
 
